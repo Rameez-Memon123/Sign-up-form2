@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .form-backgroud {
+            background-color: white;
+            width: 261px;
+            /* margin: 46px; */
+            padding: 46px;
+            height: 373px;
+            border: 40px solid #3598DC;
+        }
+
+        .register-form {
+            width: 100px;
+            padding: 10px;
+            background-color: #F2F2F2;
+            margin-left: 4px;
+
+        }
+
+        .register-form-two {
+            width: 246px;
+            padding: 5px;
+            background-color: #F2F2F2;
+            margin-top: 10px;
+            /* border-radius: 21px; */
+            /* border-radius: 6px 19px; */
+        }
+
+        .btn {
+            background-color: #3598DC;
+            color: #FFFAF9;
+            padding: 8px 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-backgroud">
+        <div>
+            <h1>Sign Up</h1>
+            <p style="color: silver">Plese fill in this Form to create an acoount</p>
+            </hr>
+        </div>
+        <form onsubmit="form()">
+
+            <input type="name" name="name" required placeholder="First Name" id="name" class="register-form" onfocus="green(this);" onblur="yellow(this);">
+            <input type="name" name="name" required placeholder="Last Name" id="Last-name" class="register-form" onfocus="green(this);" onblur="yellow(this);">
+
+            </br>
+
+
+            </br>
+            <input type="email" name="Email" required placeholder="Email" id="email" class="register-form-two" onfocus="green(this);" onblur="yellow(this);">
+            </br>
+            <input type="password" name="password" required placeholder="Password" id="Password" class="register-form-two" onfocus="green(this);"
+                onblur="yellow(this);">
+            </br>
+            <input type="password" name="Confirm-password" required placeholder="Confirm-password" id="Confirm-password" class="register-form-two"
+                onfocus="green(this);" onblur="yellow(this);">
+
+            </br>
+            </br>
+
+            <input type="submit" name="submit" value="Sign up" class="btn">
+        </form>
+
+        <div>
+
+</body>
+<script>
+
+    function form() {
+        var firstName = document.getElementById('name').value
+        var Lastname = document.getElementById('Last-name').value
+        var email = document.getElementById('email').value
+        var password = document.getElementById('Password').value
+        var ConfirmPassword = document.getElementById('Confirm-password').value
+
+
+        // if (email == "") {
+        //     alert ("Email Address required");
+        // }
+       
+        // else if (Lastname == "") {
+        //     alert("Last name required")
+        // }
+
+        // else if (password == "") {
+        //     alert("Password required")
+        // }
+        // else if (ConfirmPassword == "") {
+        //     alert(" ConfirmPassword required")
+        // }
+        // else {
+        //     alert("thanks for your submit form")
+        // }
+
+
+       document.getElementById('name').value
+       document.getElementById('Last-name').value
+       document.getElementById('email').value
+        document.getElementById('Password').value
+       document.getElementById('Confirm-password').value
+    }
+    function green(x) {
+        x.style.backgroundColor = 'aqua'
+    }
+    function yellow(x) {
+        x.style.backgroundColor = '#F2F2F2'
+
+    }
+    
+</script>
+
+</html>
